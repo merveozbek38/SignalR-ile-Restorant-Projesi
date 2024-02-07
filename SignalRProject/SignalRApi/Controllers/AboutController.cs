@@ -55,6 +55,7 @@ namespace SignalRApi.Controllers
 				ImageUrl= updateAboutDto.ImageUrl,
 				Description= updateAboutDto.Description,
 				Title= updateAboutDto.Title,
+			   
 			};
 
 			_aboutService.TUpdate(about);

@@ -34,10 +34,10 @@ namespace SignalRApi.Controllers
 		{
 			_discountService.TAdd(new Discount()
 			{
-				Amount= createDiscountDto.Amount,
-				Description= createDiscountDto.Description,
-				 ImageUrl= createDiscountDto.ImageUrl,
-				 Title= createDiscountDto.Title,
+				Amount=createDiscountDto.Amount,
+				Description=createDiscountDto.Description,
+				ImageUrl=createDiscountDto.ImageUrl,
+				Title = createDiscountDto.Title
 			});
 
 			return Ok("İndirim Bilgisi Eklendi");
@@ -69,6 +69,8 @@ namespace SignalRApi.Controllers
 				Description = updateDiscountDto.Description,
 				ImageUrl = updateDiscountDto.ImageUrl,
 				Title = updateDiscountDto.Title,
+				DiscountID= updateDiscountDto.DiscountID,
+				
 			});
 
 			return Ok("İndirim Bilgisi Güncellendi");
