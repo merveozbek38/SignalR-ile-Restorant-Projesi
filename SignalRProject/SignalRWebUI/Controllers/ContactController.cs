@@ -50,7 +50,7 @@ namespace SignalRWebUI.Controllers
 
 		}
 
-		public async Task<IActionResult> DeleteAbout(int id)
+		public async Task<IActionResult> DeleteContact(int id)
 		{
 			var client = _httpClientFactory.CreateClient();
 			var responseMessage = await client.DeleteAsync($"https://localhost:7095/api/Contact/{id}");
