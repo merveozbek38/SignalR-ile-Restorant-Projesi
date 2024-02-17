@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-	namespace SignalRWebUI.Dtos.SocialMediaDtos
-	{
+namespace SignalRWebUI.Dtos.SocialMediaDtos
+{
 	public class ResultSocialMediaDto
 	{
 		public int SocialMediaID { get; set; }
