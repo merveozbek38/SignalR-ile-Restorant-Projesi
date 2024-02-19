@@ -221,3 +221,4 @@ C:\Users\Kaan\Documents\GitHub\SignalR-ile-Restorant-Projesi\SignalRProject\Sign
 C:\Users\Kaan\Documents\GitHub\SignalR-ile-Restorant-Projesi\SignalRProject\SignalRWebUI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Kaan\Documents\GitHub\SignalR-ile-Restorant-Projesi\SignalRProject\SignalRWebUI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Kaan\Documents\GitHub\SignalR-ile-Restorant-Projesi\SignalRProject\SignalRWebUI\obj\Debug\net7.0\SignalRWebUI.csproj.CopyComplete
+C:\Users\Kaan\Documents\GitHub\SignalR-ile-Restorant-Projesi\SignalRProject\SignalRWebUI\bin\Debug\net7.0\libman.json
