@@ -1,10 +1,10 @@
-﻿@{
-	ViewData["Title"] = "Index";
-	Layout = "~/Views/AdminLayout/Index.cshtml";
-
+﻿
+@{
+    ViewData["Title"] = "Index2";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Index2</h1>
 
 <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -24,7 +24,11 @@
 
 							connection.start().then(() => {
 								$("#connstatus").text(connection.state);
-								connection.invoke("SendeCategoryCount");
+								setInterval(()=>{
+									connection.invoke("SendeCategoryCount");
+
+								},1000);
+								
 
 							}).catch((err) => { console.log(err) });
 
@@ -50,6 +54,7 @@
 		<div class="alert alert-success">Kategori Sayısı:<strong id="categorycount"></strong></div>
 	</div>
 </div>
+
 
 
 
