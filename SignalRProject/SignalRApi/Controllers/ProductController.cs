@@ -38,6 +38,13 @@ namespace SignalRApi.Controllers
         return Ok(_productService.TProductCount());
         }
 
+		[HttpGet("ProductPriceAvgByHamburger")]
+
+		public IActionResult ProductPriceAvgByHamburger()
+		{
+			return Ok(_productService.TProductAvgPriceByHamburger());
+		}
+
 		[HttpGet("ProductNameByMaxPrice")]
 
 		public IActionResult ProductNameByMaxPrice()
