@@ -1,12 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using SignalRWebUI.Dtos.ProductDtos;
+using SignalRWebUI.Dtos.SliderDtos;
 
 namespace SignalRWebUI.ViewComponents.DefaultComponents
 {
 	public class _DefaultOurMenuComponentPartial:ViewComponent
 	{
-		public IViewComponentResult Invoke()
+		private readonly IHttpClientFactory _httpClientFactory;
+
+		public _DefaultOurMenuComponentPartial(IHttpClientFactory httpClientFactory)
 		{
-			return View();
+			_httpClientFactory = httpClientFactory;
+		}
+
+		public async Task<IViewComponentResult> InvokeAsync()
+		{
+			var client = _httpClientFactory.CreateClient();
+			var responsemessage = await client.GetAsync("https://localhost:7095/api/Product");
+
+			var jsonData = await responsemessage.Content.ReadAsStringAsync();
+			var values = JsonConvert.DeserializeObject<List<ResultProductDto>>(jsonData);
+			return View(values);
+
 		}
 	}
 }
