@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Kaan/Documents/GitHub/SignalR-ile-Restorant-Projesi/SignalRProject/SignalRWebUI/Views/Baskets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kaan/Documents/GitHub/SignalR-ile-Restorant-Projesi/SignalRProject/SignalRWebUI/Views/Booking/CreateBooking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDcmVhdGVCb29raW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
