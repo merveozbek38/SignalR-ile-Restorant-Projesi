@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DataAccessLayer.Concrete;
+using SignalR.DtoLayer.BasketDto;
 using SignalRApi.Models;
 
 namespace SignalRApi.Controllers
@@ -43,6 +44,13 @@ namespace SignalRApi.Controllers
 			}).ToList();
 
 			return Ok(values);
+		}
+
+		[HttpPost]
+		public IActionResult CreateBasket(CreateBasketDto createBasketDto)
+		{
+			using var context = new SignalRContext();
+
 		}
 	}
 }
