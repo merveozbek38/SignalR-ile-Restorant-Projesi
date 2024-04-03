@@ -31,9 +31,9 @@
 
 				connection.on("ReceiveBookingList", (value) => {
 					console.log(value);
-					$("#bookingList").empty();
-					value.forEach((item,index)=>{
-						$("#bookingList").append(`<li class="list-group-item">${item.name}</li>`)
+					
+
+
 					});
 					
 				});
